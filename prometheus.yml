@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "predict-api"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["predict-api:8000"]
