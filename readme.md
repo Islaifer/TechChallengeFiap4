@@ -85,6 +85,8 @@ Response Body:
 ```
 Descrição: Essa rota serve para realizar uma predição passando o Histórico (ou não) de preços do ativo (Disney). O atributo "how_many_days" serve para indicar quantos dias teremos previsão. O atributo "historic_data" serve para passarmos o histórico do ativo (para usar o histórico, devemos passar no mínimo 90 dias de histórico). Na resposta, o "used_manual_history" serve para indicar se foi passado ou não o histórico, "warn" serve para dar algum aviso sobre a resposta e "result" serve para mostrar a lista de previsões de acordo com o número de dias passado (quanto maior o número de dias, menor a precisão).
 
+No projeto, tem um arquivo chamado example_with_history.json, ele é um exemplo com 90 dias de histórico para teste.
+
 ## Funcionamento
 
 Este projeto é dividido em 2, uma parte para a implementação, treinamento, avaliação e salvamento de um modelo LSTM, e a segunda parte uma API implementada em FastAPI para servir o modelo que foi gerado.
